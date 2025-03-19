@@ -21,7 +21,6 @@ div{
     justify-content: center;
     border-radius: 5px;
     text-align-last: justify;
-    align: justify;
     margin: auto;
     gap: 150px;
     margin-bottom: 10px;
@@ -44,7 +43,6 @@ div{
     justify-content: center;
     border-radius: 30px;
     text-align-last: center;
-    align: center;
     margin: center;
     margin-top: 100px;
 }
@@ -69,7 +67,6 @@ div{
     color: rgb(255, 255, 255);;
     justify-content: center;
     text-align-last: center;
-    align: center;
     margin : center;
     margin-top: 80px;
     padding-top: 30px;
