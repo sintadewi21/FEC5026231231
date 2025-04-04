@@ -12,30 +12,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <style>
-            /* Jika layar lebih besar atau sama dengan 620px, gambar dan shadow box tetap memiliki lebar maksimum 620px */
-            @media screen and (min-width: 620px) {
-                .image-wrapper, .shadow-box {
-                    max-width: 620px;
-                    width: 100%;
-                }
+            * {
+                box-sizing: border-box;
             }
-
-            /* Jika layar lebih kecil dari 620px, gambar dan shadow box akan mengikuti lebar layar */
-            @media screen and (max-width: 620px) {
-                .image-wrapper, .shadow-box {
-                    width: 100%; /* Menyesuaikan lebar dengan layar */
-                    max-width: 100%; /* Memastikan gambar tidak melampaui lebar layar */
-                }
+            body{
+                background-color: #5E487B;  
             }
-        </style>
-    </head>
-    <body style="background-color: #5E487B;">
-        <style>
+            .main-wrapper {
+                max-width: 620px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 20px;
+            }
             .image-wrapper {
                 position: relative; 
-                display: inline-block; 
                 width: 100%; 
                 border-radius: 30px;
+                max-width: 620px;
+                margin-left: auto;
+                margin-right: auto;
             }
             .shadow-box {
                 position: absolute; 
@@ -45,10 +40,12 @@
                 height: 100%; 
                 background-color: black; 
                 border-radius: 30px;
+                max-width: 620px;
+                margin-left: auto;
+                margin-right: auto;
             }
             .shadow-box-wrapper {
                 position: relative; 
-                display: inline-block; 
                 max-width: 620px; 
                 width: 100%; 
                 border-radius: 20px;
@@ -73,15 +70,16 @@
             /* Efek hover untuk item yang ditekan */
             .item-pressed {
                 transition: transform 0s ease-in-out;
-                display: inline-block;
             }
             .item-pressed:hover {
                 transform: translate(4px, 4px);
             }
         </style>
-        <div class="container justify-content-center align-items-center text-center" id="main-menu">
-            <div class="image-wrapper container mt-4">
-                <div class="row">
+    </head>
+    <body style="container px-3">
+        <div class="main-wrapper">
+            <div class="mx-auto">
+                <div class="text-right mt-3">
                     <div class="col-md-12 d-flex text-right" id="menu">
                         <button type="button" class="btn p-0 d-flex flex-column justify-content-center align-items-center rounded-circle ml-auto"
                         style="width: 40px; height: 40px; background-color: rgba(26, 26, 26, 0.35); border: none;">
@@ -95,7 +93,7 @@
                 </div>
             </div>
 
-            <div class="mx-auto h-full w-full max-w-profileContainer">
+            <div class="mx-auto">
                 <div class="flex flex-col items-center">
                     <div class="p-2 bg-none" id="profile">
                         <img src="profilephoto.png" class="rounded-pill mx-auto d-block" style="width: 95px;">
@@ -107,10 +105,8 @@
                         </div> 
                     </div> 
                 </div>
-                
-                <div class="container" id="linkcontainer">
-                        <div class="" id="linkconsultation">
-                            <div class="h-full position-relative" id="calendarphoto">
+                    <div class="" id="linkconsultation">
+                        <div class="h-full position-relative" id="calendarphoto">
                                 <a href="https://calendly.com/listitwithlee/30min?month=2025-04">
                                     
                                     <!-- Kotak Utama -->
@@ -163,7 +159,7 @@
                             </div>
                         </div>
                             <!-- All Things Section -->
-                        <div class="h-full mt-3" id="allthing">
+                        <div class="h-full mt-3" id="allthing" style="text-align: center;"">
                             <p style="color: #ffffff;">All things Listitwithlee</p>
                         </div>
                         <style>
@@ -255,7 +251,7 @@
                     </div> 
                 </div> 
                 <!--linktree-->
-                <div class="container mt-4" id="Linktree">
+                <div class="container mt-4 text-center" id="Linktree">
                     <style>
                         .btn-linktree {
                             border-radius: 30px;
